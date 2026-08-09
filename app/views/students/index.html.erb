@@ -1,0 +1,10 @@
+<%= form_with url: students_path, method: :get, local: true do |form| %>
+  <p>
+    <%= form.text_field :query, value: params[:query] %>
+    <%= form.submit "Search" %>
+  </p>
+<% end %>
+
+<% @students.each do |student| %>
+  <%= render "student", student: student %>
+<% end %>

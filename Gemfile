@@ -11,6 +11,7 @@ gem 'sassc-rails'
 gem 'sdoc', '~> 2.4', group: :doc
 gem 'sqlite3', '~> 1.4'
 gem 'warnings'
+gem "rails-controller-testing"
 
 group :development, :test do
   gem 'faker', '~> 3.0'
